@@ -30,6 +30,17 @@ h1, h2, h3, h4, h5, h6 {
     vertical-align: middle;
 }
 
+.theatre-header {
+    text-align: left;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cosmetic-room {
+    padding: 20px;
+}
+
 
 /*General*/
 
@@ -40,6 +51,20 @@ h1, h2, h3, h4, h5, h6 {
     -o-background-size: cover;
     background-size: cover;
     min-height: 700px;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    background-position: bottom center;
+}
+
+.intro-theatre {
+    background: url(../img/los_angeles_theatre.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 700px;
+    height: 1050px;
     color: #fff;
     padding: 30px;
     text-align: center;
