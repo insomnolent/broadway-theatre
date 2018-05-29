@@ -8,6 +8,8 @@
     <link rel="stylesheet" type="text/css" href="foundation-icons/foundation-icons.css">
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/markers.css">
+
 </head>
 <body>
     <div class="intro-theatre">
@@ -30,21 +32,39 @@
                                 </div>
                             </div> 
                         </div>
-                        <div class="cosmetic-room">
-                            <img src="img/marker.png" id="marker" style="display: show; position: absolute;" />
-                            <img src="img/cosmetic_room.png" id="map" />
+                        <div class="row">
+                            <div class="large-9 columns">
+                                <div class="cosmetic-room">
+                                   <!--  <img src="img/marker.png" id="marker" style="display: show; position: absolute; " />
+                                    <img src="img/floor_plan.png" id="map" /> -->
+                                    <div class="floor-plan-container">
+                                        <img src="img/floor_plan_boxes.png" alt="" usemap="#Map" />
 
-                            <script type="text/javascript">
-                            document.getElementById('map').onclick = function(e) {
-                               with(document.getElementById('marker')) {
-                                    style.left = e.pageX;
-                                    style.top = e.pageY;
-                                    style.display = 'block';
-                               }
-                               // Here you forward the coordinates e.pageX, e.pageY 
-                               // ... to whatever function that needs it
-                            };
-                            </script>
+                                        <map name="Map" id="Map">
+                                            <area alt="" title="the stage" shape="rect" coords="78,157,113,293" id="the-stage-text" />
+                                            <area alt="" title="something else" shape="rect" coords="378,157,113,293" id="audience-text" />
+                                        </map>
+                                        <!-- <div class="stage"></div> -->
+
+                                    </div>
+
+                                    <!-- <script type="text/javascript">
+                                    document.getElementById('map').onclick = function(e) {
+                                       with(document.getElementById('marker')) {
+                                            style.left = e.pageX;
+                                            style.top = e.pageY;
+                                            style.display = 'block';
+                                       }
+                                       // Here you forward the coordinates e.pageX, e.pageY 
+                                       // ... to whatever function that needs it
+                                    };
+                                    </script> -->
+                                </div>
+                            </div>
+                            <div class="large-3 columns">
+                                <div id="the-stage-text-show"></div>
+                            </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -72,5 +92,6 @@
     <script>
         $(document).foundation();
     </script>
+    <script src="js/markers.js"></script>
 </body>
 </html>

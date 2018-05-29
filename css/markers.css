@@ -1,0 +1,12 @@
+.floor-plan-container {
+   position: relative;
+}
+.stage {
+   position: absolute;
+   border-style:solid;
+   color: green;
+   left: 90px;
+   top: 170px;
+   width: 35px;
+   height: 136px;
+}
