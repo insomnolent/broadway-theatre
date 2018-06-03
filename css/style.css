@@ -71,6 +71,20 @@ h1, h2, h3, h4, h5, h6 {
     background-position: bottom center;
 }
 
+.intro-history {
+        background: url(../img/los_angeles_theatre.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 700px;
+    height: 1050px;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    background-position: bottom center;
+}
+
 /* About */
 .about {
     background-color: #fff;

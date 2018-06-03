@@ -8,11 +8,9 @@
     <link rel="stylesheet" type="text/css" href="foundation-icons/foundation-icons.css">
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="css/markers.css">
-
 </head>
 <body>
-    <div class="intro-theatre">
+    <div class="intro">
         <div class="row">
             <div class="large-12 columns">
                 <div style="background-color:rgba(0,0,0,0.8); min-height:100%; width:100%;">
@@ -25,7 +23,7 @@
                             <div style="float: right">
                                 <div>
                                     <a href="./la_theatre.html">
-                                        <button class="secondary button">Intro</button>
+                                        <button class="secondary hollow button">Intro</button>
                                     </a>
                                     <a href="./la_theatre_auditorium.html">
                                         <button class="secondary button">Auditorium</button>
@@ -34,7 +32,7 @@
                                         <button class="secondary button">Basement</button>
                                     </a>
                                     <a href="./la_theatre_balcony.html">
-                                        <button class="secondary hollow button">Balcony</button>
+                                        <button class="secondary button">Balcony</button>
                                     </a>
                                     <a href="./index.html">
                                         <button class="secondary button">Back</button>
@@ -43,39 +41,21 @@
                             </div> 
                         </div>
                         <div class="row">
-                            <div class="large-12 columns">
-                                <div class="cosmetic-room">
-                                    <p>
-                                        Click the highlighted sections to see more details!
-                                    </p>
-                                   <!--  <img src="img/marker.png" id="marker" style="display: show; position: absolute; " />
-                                    <img src="img/floor_plan.png" id="map" /> -->
-                                    <div class="floor-plan-container">
-                                        <img src="img/floor_plan_boxes.png" alt="" usemap="#Map" />
-
-                                        <map name="Map" id="Map">
-                                            <area alt="" title="the stage" shape="rect" coords="98,205,143,368" id="the-stage-text" />
-                                            <area alt="" title="audience" shape="rect" coords="162,156,430,417" id="audience-text" />
-                                            <area shape="rect" alt="" title="crystal fountain" coords="511,278,527,298" id="fountain-text" />
-                                            <area shape="rect" alt="" title="stairs" coords="561,268,629,306" id="stairs-text" />
-                                            <area shape="rect" alt="" title="foyer" coords="637,246,764,333" id="foyer-text" />
-                                            <area shape="rect" alt="" title="ticketing booth" coords="772,248,807,330" id="tickets-text" />
-                                            <area shape="rect" alt="" title="marquise" coords="845,247,851,331" id="marquise-text" />
-                                        </map>
-                                        <!-- <div class="stage"></div> -->
-
-                                    </div>
-                                </div>
+                            <div style="margin:5px;">
+                                <iframe id="nestedIFrame" src="https://jameswwilson.shinyapps.io/shiny_test_app/" width="100%" frameBorder="0" scrolling="no"></iframe>
                             </div>
-                        </div>
-                        <div>
-                            <div class="row">
-                                <div class="large-12 columns">
-                                    <div id="text-show"></div>
-                                </div>
-                            </div>
+
+                            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+                            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.6.1/ie8.polyfils.min.js"></script>
+                            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.6.1/iframeResizer.min.js"></script>
+                            <script type="text/javascript">
+                                 iFrameResize({heightCalculationMethod: "lowestElement"});
+
+                            </script>
                         </div>
                     </div>
+
+
                 </div>
             </div>
         </div>
@@ -100,6 +80,5 @@
     <script>
         $(document).foundation();
     </script>
-    <script src="js/markers.js"></script>
 </body>
 </html>
