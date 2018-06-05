@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5, h6 {
     -o-background-size: cover;
     background-size: cover;
     min-height: 700px;
-    height: 1050px;
+    height: 800px;
     color: #fff;
     padding: 30px;
     text-align: center;
@@ -78,11 +78,18 @@ h1, h2, h3, h4, h5, h6 {
     -o-background-size: cover;
     background-size: cover;
     min-height: 700px;
-    height: 1050px;
+    height: 800px;
     color: #fff;
     padding: 30px;
     text-align: center;
     background-position: bottom center;
+}
+
+.all-text-sections {
+    text-align: left;
+    font-size: 14px;
+    height: 480px;
+    overflow-y: auto;
 }
 
 /* About */
