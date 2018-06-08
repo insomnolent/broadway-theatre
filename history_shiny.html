@@ -23,10 +23,10 @@
                             <div style="float: right">
                                 <div>
                                     <a href="./history.html">
-                                        <button class="secondary hollow button">Intro</button>
+                                        <button class="secondary button">Intro</button>
                                     </a>
                                     <a href="./history_shiny.html">
-                                        <button class="secondary button">Timeline</button>
+                                        <button class="secondary hollow button">Timeline</button>
                                     </a>
                                     <a href="./history_status.html">
                                         <button class="secondary button">Status</button>
@@ -38,11 +38,17 @@
                             </div> 
                         </div>
                         <div class="row">
-                             <div class="large-12 columns">
-                                <div class="cosmetic-room">
-                                    <p>These visualizations were built with R, Shiny, and Tableau!</p>
-                                </div>
+                            <div style="margin:5px;">
+                                <iframe id="nestedIFrame" src="https://jameswwilson.shinyapps.io/myapp/" width="100%" frameBorder="0" scrolling="no"></iframe>
                             </div>
+
+                            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+                            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.6.1/ie8.polyfils.min.js"></script>
+                            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.6.1/iframeResizer.min.js"></script>
+                            <script type="text/javascript">
+                                 iFrameResize({heightCalculationMethod: "lowestElement"});
+
+                            </script>
                         </div>
                     </div>
 

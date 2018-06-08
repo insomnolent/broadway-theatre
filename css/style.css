@@ -270,5 +270,15 @@ h1, h2, h3, h4, h5, h6 {
         color: #F78536;
     }
 
+/* to hide display on mobile */
+#content-desktop {display: block;}
+#content-mobile {display: none;}
+
+@media screen and (max-width: 1165px) {
+
+#content-desktop {display: none;}
+#content-mobile {display: block;}
+
+}
 
 /*Footer */
